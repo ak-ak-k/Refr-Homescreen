@@ -1,0 +1,522 @@
+<!-- Mobile Screen -->
+<div class="d-block d-md-none d-lg-none">
+    <app-header [type]="1"></app-header>
+    <div class="container">
+        <div class="row">
+            <div class="col-box">
+                <app-search></app-search>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-box" style="margin-bottom: 0!important;padding: 0;">
+                <nav mat-tab-nav-bar>
+                    <a mat-tab-link *ngFor="let link of links" (click)="activeLink = link" [active]="activeLink == link"
+                        [ngClass]="activeLink == link ? 'active' : ''"> {{link}} </a>
+                </nav>
+            </div>
+        </div>
+
+        <img src="../../../assets/images/banner.png" width="100%">
+
+        <div class="shadow-none rounded-0">
+            <div class="items">
+                <div class="item">
+                    <div class="img-container green-border">
+                        <img src="../../../assets/images/users/user1.png" alt="">
+                    </div>
+                    <p>Anna</p>
+                </div>
+                <div class="item">
+                    <div class="img-container orange-border">
+                        <img src="../../../assets/images/users/user2.png" alt="">
+                    </div>
+                    <p>Sam</p>
+                </div>
+                <div class="item">
+                    <div class="img-container blue-border">
+                        <img src="../../../assets/images/users/user3.png" alt="">
+                    </div>
+                    <p>Alexand</p>
+                </div>
+                <div class="item">
+                    <div class="img-container pink-border">
+                        <img src="../../../assets/images/users/user4.png" alt="">
+                    </div>
+                    <p>Julie</p>
+                </div>
+                <div class="item">
+                    <div class="img-container red-border">
+                        <img src="../../../assets/images/users/user2.png" alt="">
+                    </div>
+                    <p>Aman</p>
+                </div>
+                <div class="item">
+                    <div class="img-container red-border">
+                        <img src="../../../assets/images/users/user1.png" alt="">
+                    </div>
+                    <p>Shina</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row bg-secondary">
+            <br>
+            <div class="col-box">
+                <div class="card shadow">
+                    <div class="card-img-container"
+                        style="background-image: url(https://d3nn873nee648n.cloudfront.net/900x600/13375/14-SM471903.jpg);">
+                        <div class="offer-tag">
+                            <h6>Get <img src="../../../assets/svg/coin.svg" alt=""> 100</h6>
+                        </div>
+                        <div class="tag b_gradient">
+                            <span class="material-icons">person_outline</span>
+                            <p>Alex John</p>
+                        </div>
+                    </div>
+                    <div class="card-inner">
+                        <div class="row d-flex">
+                            <div class="col-50">
+                                <b class="product-title">
+                                    Grocery Products
+                                </b>
+                                <div class="sub-text-alignment">
+                                    <p class="text-muted">Garments </p>
+                                    <span class="vh-line">|</span>
+                                    <span class="status">Online Store</span>
+                                </div>
+                            </div>
+                            <div class="col-50 text-end my-auto">
+                                <button mat-flat-button class="btn-dark">Get This</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-box">
+                <div class="card shadow">
+                    <div class="card-img-container"
+                        style="background-image: url(https://d3nn873nee648n.cloudfront.net/900x600/13375/14-SM471903.jpg);">
+                        <div class="offer-tag">
+                            <h6>Get <img src="../../../assets/svg/coin.svg" alt=""> 40%</h6>
+                        </div>
+                        <div class="tag b_gradient">
+                            <span class="material-icons">person_outline</span>
+                            <p>Alex John</p>
+                        </div>
+                    </div>
+                    <div class="card-inner">
+                        <div class="row d-flex">
+                            <div class="col-50">
+                                <b class="product-title">
+                                    Grocery Products
+                                </b>
+                                <div class="sub-text-alignment">
+                                    <p class="text-muted">Garments </p>
+                                    <span class="vh-line">|</span>
+                                    <span class="status">Online Store</span>
+                                </div>
+                            </div>
+                            <div class="col-50 text-end my-auto">
+                                <button mat-flat-button class="btn-dark">Get This</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- Desktop Screen -->
+<div class="d-none d-md-block d-lg-block">
+    <div class="bg-secondary">
+        <div class="header-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-100 search-container">
+                        <app-search></app-search>
+                    </div>
+                </div>
+                <div class="header-card">
+                    <div class="text-container">
+                        <img src="../../../assets/svg/coin.svg" class="coin1" alt="">
+                        <img src="../../../assets/svg/coin.svg" class="coin2" alt="">
+                        <img src="../../../assets/svg/coin.svg" class="coin3" alt="">
+                        <img src="../../../assets/svg/coin.svg" class="coin4" alt="">
+                        <h3>2X</h3>
+                        <b class="font-size-24">Get Max Benefits</b> <br>
+                        <div class="sub-text-container">
+                            <span>
+                                When You Shop Using Friends
+                            </span>
+                            <b>Recommendations</b>
+                        </div>
+
+                    </div>
+                    <div class="right-container">
+                        <div class="img-container">
+                            <img src="../../../assets/svg/coin.svg" class="coin1" alt="">
+                            <img src="../../../assets/svg/coin.svg" class="coin2" alt="">
+                            <img src="../../../assets/svg/wallet.svg" width="80%" alt="">
+
+                        </div>
+                    </div>
+                </div>
+                <!-- <mat-grid-list cols="2" rowHeight="2:1">
+                    <mat-grid-tile>
+                        <div class="text-container">
+                            <img src="../../../assets/svg/coin.svg" class="coin1" alt="">
+                            <img src="../../../assets/svg/coin.svg" class="coin2" alt="">
+                            <img src="../../../assets/svg/coin.svg" class="coin3" alt="">
+                            <img src="../../../assets/svg/coin.svg" class="coin4" alt="">
+                            <h3>2X</h3>
+                            <b>Get Max Benefits</b> <br>
+                            <p class="mb-0">
+                                When You Shop Using
+                            </p>
+                            <span>
+                                Friends
+                            </span>
+                            <b>Recommendations</b>
+
+                            <div class="payment-card d-flex">
+                                <div>
+                                    <img src="../../../assets/svg/payment-card.svg" width="60%" alt="">
+                                </div>
+                                <div class="my-auto">
+                                    <h4 class="m-0">Make a purchase</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </mat-grid-tile>
+
+                    <mat-grid-tile>
+                        <div class="img-container">
+                            <img src="../../../assets/svg/coin.svg" class="coin1" alt="">
+                            <img src="../../../assets/svg/coin.svg" class="coin2" alt="">
+                            <img src="../../../assets/svg/wallet.svg" width="80%" alt="">
+
+                            <div class="cashback-card d-flex">
+                                <div>
+                                    <img src="../../../assets/svg/cashback.svg" width="60%" alt="">
+                                </div>
+                                <div class="my-auto">
+                                    <h4 class="m-0">Get instant cashback</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                    </mat-grid-tile>
+
+                </mat-grid-list> -->
+            </div>
+            <div class="container">
+                <div class="header-card-footer">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="payment-card d-flex">
+                                <div>
+                                    <img src="../../../assets/svg/payment-card.svg" width="80%" alt="">
+                                </div>
+                                <div class="my-auto">
+                                    <h4 class="m-0">Make a purchase</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="cashback-card d-flex">
+                                <div class="m-auto">
+                                    <img src="../../../assets/svg/cashback.svg" width="80%" alt="">
+                                </div>
+                                <div class="my-auto">
+                                    <h4 class="m-0">Get instant cashback</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-box" style="padding: 8px;margin: 0!important;background: #fff;
+        box-shadow: 0 0px 15px -5px #0003, 0 1px 1px #00000024, 0 1px 3px #0000001f !important;
+        border-radius: 0 0 10px 10px;">
+            <div class="row">
+                <div class="col-12">
+                    <div class="items">
+                        <div class="item">
+                            <div class="img-container green-border"
+                                style="background-image: url(https://s3-alpha-sig.figma.com/img/6b21/5f26/41e9c18b0fbbaa8d6034fdc74df0507f?Expires=1649635200&Signature=Y4rm91zNid0-MUukZfRT1p-qE4lujT1NCl~gPNLemqo9m60EqXYsFChjTiRFeGUNl8K8Dmj02IofGd63mMPVZnUOQ9wDD72N7fIMfzGAsFcheCmNzTD9IY~9WjVzMw6Fuj1jV3tpzU9jO72j3zQD-wVavC1QGmhzhnrCL0x-HW5xL1na9RlV8WnDjfD~XtR5~gJ95ZRVexX4QLk~G9lTq6Pmywcya67iLuWIdIq1IF3An3LxTbf-n6L~agA137toPxIm67lS9oCtnWMqkWU-xMWG14Uh5LjNxgEg~kyGbpvHci7rGEnTP7xefRZwUfShCKzy4KKrW1w4AW9MddOP7w__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);">
+                            </div>
+                            <p>Anna</p>
+                        </div>
+                        <div class="item">
+                            <div class="img-container orange-border"
+                                style="background-image: url(https://s3-alpha-sig.figma.com/img/c2f7/ec54/97a855e53e2be0642e48195acfa310d7?Expires=1649635200&Signature=QG8kGAsiszndGrX03AfIZq37bj6-cPePHBAliFEhWvShiXGXY053a0xxg-AD-fF7qrkCKBdZyF~OtgsMc64ItWJKC-T04FNISk4vLoRSecT3FOeF8lqJfkLhrY2D-EC2s-SKPK8w6LckQTEK22Zg0oAoETX1moHwLV-5-aZCql-Ob1Mh3Cm78AV~i~zIfU3LBen51BRt~cAVPoou1T1TnqOSuGT5LmQCID8Dsfev7li9veMzt4BFujPoP91rXt1w00G5lR4tJ98gTr8ae5vSRxEaFz8b0M2rn9ERVL5NGW0mKqGaSpenGPm6-4kj9nYwB4bo0u2PBRibK6RTcUiRdw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);">
+                            </div>
+                            <p>Alexander</p>
+                        </div>
+                        <div class="item">
+                            <div class="img-container blue-border"
+                                style="background-image: url(https://s3-alpha-sig.figma.com/img/fdb6/d4de/1390a9f638a697528d30ef20e53d5f3b?Expires=1649635200&Signature=FGCIv34GJPeXd0ckqGr5lNBjDn~7ppu0L2TJHsXkoOaIKhhUBMVw7tkmvhIPvfXeECcGIVOZq5cMQ7lNr4EYYbkMbw18yrYW7Qcw3Mojp0Ql8fa6V-jyFoguLvhU7UggjrJuGkvu0bbKu3TjZieDVvE9eCxifO4fT4qhNewFfTEgEAoAeJMqqxHwW9plqu33aAowL0c-ZYU23yhmECOggJPU8zHbQezp6nSEnOGhlk81~vYe9cMtyoVNNggFp0wX9GbVC5FebK-NuZr8l~MTdc5sFGuC4~RkEZ-Rb-5Z8S5UlM-WEJnPYQAeHsGC2XlvGmFhtIkazv6Gz4DepugU9A__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);">
+                            </div>
+                            <p>Rose</p>
+                        </div>
+                        <div class="item">
+                            <div class="img-container pink-border"
+                                style="background-image: url(https://s3-alpha-sig.figma.com/img/7421/265f/f444edbcb217588da70264bb53415861?Expires=1649635200&Signature=WJRS4Pfpfa5dN2ammOJFXwOopmS5VTDJjlkP~4ha-RDnfue1Hz0~IOFHzkfEkkLyxqIB7~efObLoaIYvFrnMhH3zXasp~6Le0h1mRgmQ8FHWhr75PiPL8i7eve0HSsH9rAwei-ZSayBtRxxuAXwDA7FuNGRpZ2cRxwZD8U9qbItrl-UgUJ9vN8RWlt21YfYpWbCRrTaYVN2qacqEuQDYe-xfiBVvZxXJph6jxcGKDnUdIRuDIZQ7gsIKu~varZlhfhKBtJGfIDkSfWsL2lxFCPgwGeMfoXD316zigy~jBgWAdEu2tuQRI4JDDnIA7HHXHzC0wfXVTwoEAyIdXkfRuQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);">
+                            </div>
+                            <p>Sem</p>
+                        </div>
+                        <div class="item">
+                            <div class="img-container red-border"
+                                style="background-image: url(https://s3-alpha-sig.figma.com/img/c20a/cbfe/e4e0866f894e5699390279c6462ae94d?Expires=1649635200&Signature=LOXcy7CZCrWc8xg3y13Q6SM-y64NYt7wqxhuO7GzSAq-WaiZ5~KbnIScwo6MXbzZ1mWjqBVh31PXxorXPP7Z1-2-pbZvDJ8j7IQrT99T01HRlQLung~Toswsthttjijv0KTdxrE1bH2E-L92IYf3PzSOchslWUzZeQVzJ90CVuFMzPgNWKTpRxwMDTlJ7htuICmeDLNCQGtPzGhI4L0pOVIB8x6N9TVW2IMBU-GGEX6-yRALW2Zw48gIk11NrpuFr560WyYBKv7eboQgBGBMBrcAXSddzo7X~~RZyX59Nb17cGKhTbl3KdelN6b15zaho~HnkSXIf8vaqrEMe6BGXA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);">
+                            </div>
+                            <p>Leaf</p>
+                        </div>
+                        <div class="item">
+                            <div class="img-container purple-border"
+                                style="background-image: url(https://s3-alpha-sig.figma.com/img/13bc/d102/ca6d70864a1cd5985f5035a58c50cdcc?Expires=1649635200&Signature=I5XZDp~Tf-Vbm7m5lmzfhMm3HZLl6TIt7cXY8EOp200VvKF~0Xc3Sx6~wK-WFpsHUebMIThoQQhrdEi1FNLYU8IiEagOIi0to7X5B4wtesA~bi53Fdr8ptjTD~lhbM2cSW1cLffEyOsAzZv2VkVM5TdYoDQtFxdnKoyeADGACY2VrR0af5~NM54Q8Nj~Rs0WdvK4yyAMS66i-16kRSJiX8nHtCBYHx-tc6nCnxUBHr65dqGvMIAf3cSpNuiK397eRmzqUMbyjwzUz51x650UgGZi~J-3vJxQWWzUlp5fgG7WMBwbWhqihE9akQ0VsrANcqAyqnbaAw3TZQ~EsgRkqA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);">
+                            </div>
+                            <p>Julie</p>
+                        </div>
+                        <div class="item">
+                            <div class="img-container green-border"
+                                style="background-image: url(https://s3-alpha-sig.figma.com/img/42ab/1c2c/ee7fe99042d488c07ab4cc8fd55e773c?Expires=1649635200&Signature=D9i1cMKmvfGoEk77ACM5aZeI6cEV-P3J0OoNRWUTTwP0nEBvGi1g1K9KchETFf5spPb4R8JbK4nSyHssH3OnUZlRxgjxI3VoU03OGIoQ59FDGyan1IjMPpg~t0ZrwIaMKs-QClQT~9yMuYmdAnEDtMcnkfWA8k3KQ5Av2lTbvwsO8K8rd61MKmmxXNhSUKyzPYNnwvg-OgTFVsMnVI9yG4Y6s9tt6JfPT29WqaKgIIYPHmmbIcsvn8rs8Bn5TyGQj1YwBfrOaFxj33GFr7it5pJrhH7BobWYViAXKTz~jN~93gM1hsqGJPAHJKXvyxTEzVTRDHiZ3pQRf9M-CTh1IA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);">
+                            </div>
+                            <p>Aman</p>
+                        </div>
+                        <div class="item">
+                            <div class="img-container orange-border"
+                                style="background-image: url(https://s3-alpha-sig.figma.com/img/648f/185d/5031271526c0a8bee4510ea8470c2eb3?Expires=1649635200&Signature=daJgkg0RE5mwbhr36P1qkt8YmqpMjW5IStXqgW2my9hYzDd54NOgrufX~eAXDURXkEJzq4biK3h-l~ubGAnZxMeXAGgfshHly-5TOkl-OdEzIQF~aqB27AUzSzlbN0hB6AaJQ53TeRG9xuBt1UybiT6ukMD9Sn8C6nZIZMgIWG7b6NMuMWvs4QDQ2sCQClxEIXV3L5giQbft5V1fK4oaKoO-c0KPygJp8EZ5NYKJMM4ApFyl1J3fpsCXJF~SCjvL8r19h2mPRLVrD-0vlML2Zlo7geiOLgCPM-nW3hN1hpa6lJSkZB5Z2MTTUBJG21q3AYJBT1iQ~6foENiKOV-qrA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);">
+                            </div>
+                            <p>Sanjay</p>
+                        </div>
+                        <div class="item">
+                            <div class="img-container blue-border"
+                                style="background-image: url(https://s3-alpha-sig.figma.com/img/ecbd/c6ca/b6d93eec73861c6407a7040b3014d581?Expires=1649635200&Signature=OkcjU62xkobXuGj6x2AFumiXcRfThXMKO-JHys6Cgq6fQWsSYOQzRqwCYeN1~3FH7HQJwuGVm~1HrRbT-2GcFl2tD4MzTSfOwvIlRuZSpGmnfke1rjUmAod8Pu3YwAbuZ~qG9KFOWLZuZU8FHDujqv97pGz9g00FPTHJ8Hw1nkFPNesrxLDrFD-cTE0E37TSL7ulJobVHk~~qhKSy8Q9u3QZL4sy5CMgYKZ~v9IjMf76X9y0duTzcTZCCo1Vomeuu3ydb-2ZALEsW~BsCxNIAdC5dP5IjZv8XWjnWZuEKzk7KYYCdx-Nn8Wcs8MbFX4j5Vjkip1WUu9kGQltTE5hmQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);">
+                            </div>
+                            <p>Ritvik</p>
+                        </div>
+                        <div class="item">
+                            <div class="img-container pink-border"
+                                style="background-image: url(https://s3-alpha-sig.figma.com/img/d20c/fa7e/ae6679e9816729e85770b53f80535b7a?Expires=1649635200&Signature=W98Api2U8R-aPndxXAlyxilTyexSqxOi5Gl67XeOUeyGoQRBy-yaBhov~hQwnlC9oUG3Iq3lqoDUMn3eeNXihAoiobwKSBJ29kDIKQ6pOuiXZweGrMxbIC4FbubbXGvDgSG9yVU1~W1akWTKyCVriXdTVMIcMiG88YFY~gEph9Iwx4kZJc1a3JvVVHOtvTpDqTv-~EDGsFvPSBCjvdLNGsSjvdNX2saQq4vxf9m4HrEYDNnSuJdZsq0bWKwB0y9J4qtE2yuMPrQrxf0T3XrYqgDu3LEZzxEPo4WtLw3Dqywp-52am6KvCOXILJY~Wo1zNcef1wFH9IFJPKBcgAn-Cg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);">
+                            </div>
+                            <p>Vishal</p>
+                        </div>
+                        <div class="item">
+                            <div class="img-container red-border"
+                                style="background-image: url(https://s3-alpha-sig.figma.com/img/6b21/5f26/41e9c18b0fbbaa8d6034fdc74df0507f?Expires=1649635200&Signature=Y4rm91zNid0-MUukZfRT1p-qE4lujT1NCl~gPNLemqo9m60EqXYsFChjTiRFeGUNl8K8Dmj02IofGd63mMPVZnUOQ9wDD72N7fIMfzGAsFcheCmNzTD9IY~9WjVzMw6Fuj1jV3tpzU9jO72j3zQD-wVavC1QGmhzhnrCL0x-HW5xL1na9RlV8WnDjfD~XtR5~gJ95ZRVexX4QLk~G9lTq6Pmywcya67iLuWIdIq1IF3An3LxTbf-n6L~agA137toPxIm67lS9oCtnWMqkWU-xMWG14Uh5LjNxgEg~kyGbpvHci7rGEnTP7xefRZwUfShCKzy4KKrW1w4AW9MddOP7w__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);">
+                            </div>
+                            <p>Sanjay</p>
+                        </div>
+                        <div class="item">
+                            <div class="img-container purple-border"
+                                style="background-image: url(https://s3-alpha-sig.figma.com/img/c2f7/ec54/97a855e53e2be0642e48195acfa310d7?Expires=1649635200&Signature=QG8kGAsiszndGrX03AfIZq37bj6-cPePHBAliFEhWvShiXGXY053a0xxg-AD-fF7qrkCKBdZyF~OtgsMc64ItWJKC-T04FNISk4vLoRSecT3FOeF8lqJfkLhrY2D-EC2s-SKPK8w6LckQTEK22Zg0oAoETX1moHwLV-5-aZCql-Ob1Mh3Cm78AV~i~zIfU3LBen51BRt~cAVPoou1T1TnqOSuGT5LmQCID8Dsfev7li9veMzt4BFujPoP91rXt1w00G5lR4tJ98gTr8ae5vSRxEaFz8b0M2rn9ERVL5NGW0mKqGaSpenGPm6-4kj9nYwB4bo0u2PBRibK6RTcUiRdw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);">
+                            </div>
+                            <p>Jake</p>
+                        </div>
+                        <div class="item">
+                            <div class="img-container"
+                                style="background-image: url(https://s3-alpha-sig.figma.com/img/fdb6/d4de/1390a9f638a697528d30ef20e53d5f3b?Expires=1649635200&Signature=FGCIv34GJPeXd0ckqGr5lNBjDn~7ppu0L2TJHsXkoOaIKhhUBMVw7tkmvhIPvfXeECcGIVOZq5cMQ7lNr4EYYbkMbw18yrYW7Qcw3Mojp0Ql8fa6V-jyFoguLvhU7UggjrJuGkvu0bbKu3TjZieDVvE9eCxifO4fT4qhNewFfTEgEAoAeJMqqxHwW9plqu33aAowL0c-ZYU23yhmECOggJPU8zHbQezp6nSEnOGhlk81~vYe9cMtyoVNNggFp0wX9GbVC5FebK-NuZr8l~MTdc5sFGuC4~RkEZ-Rb-5Z8S5UlM-WEJnPYQAeHsGC2XlvGmFhtIkazv6Gz4DepugU9A__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);">
+                            </div>
+                            <p>Mike</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-box" style="margin-top: 20px!important;padding: 0 16px;align-items: center;display: flex;">
+                <nav mat-tab-nav-bar class="dasktop-navbar">
+                    <a mat-tab-link *ngFor="let link of dasktopLinks" (click)="activeLink = link"
+                        [active]="activeLink == link" [ngClass]="activeLink == link ? 'active' : ''"> {{link}} </a>
+                </nav>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-box">
+                <div #container class="card-container">
+                    <div class="card-img-container">
+                        <div class="col-box">
+                            <div class="card shadow">
+                                <div class="card-img-container"
+                                    style="background-image: url(https://d3nn873nee648n.cloudfront.net/900x600/13375/14-SM471903.jpg);">
+                                    <div class="offer-tag">
+                                        <h6>Get <img src="../../../assets/svg/coin.svg" alt=""> 40%</h6>
+                                    </div>
+                                    <div class="tag b_gradient">
+                                        <span class="material-icons">person_outline</span>
+                                        <p>Alex John</p>
+                                    </div>
+                                </div>
+                                <div class="card-inner">
+                                    <div class="row d-flex">
+                                        <div class="col-50">
+                                            <b class="product-title">
+                                                Grocery Products
+                                            </b>
+                                            <div class="d-flex">
+                                                <p class="text-muted">Garments</p>
+                                                <!-- <span class="material-icons">circle</span> -->
+                                                <span class="vh-line">|</span>
+                                                <span class="status">Online Store</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-50 text-end my-auto btn-container">
+                                            <button mat-flat-button class="btn-dark">Get This</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-img-container">
+                        <div class="col-box">
+                            <div class="card shadow">
+                                <div class="card-img-container"
+                                    style="background-image: url(https://d3nn873nee648n.cloudfront.net/900x600/13375/14-SM471903.jpg);">
+                                    <div class="offer-tag">
+                                        <h6>Get <img src="../../../assets/svg/coin.svg" alt=""> 100</h6>
+                                    </div>
+                                    <div class="tag b_gradient">
+                                        <span class="material-icons">person_outline</span>
+                                        <p>Alex John</p>
+                                    </div>
+                                </div>
+                                <div class="card-inner">
+                                    <div class="row d-flex">
+                                        <div class="col-50">
+                                            <b class="product-title">
+                                                Grocery Products
+                                            </b>
+                                            <div class="d-flex">
+                                                <p class="text-muted">Garments</p>
+                                                <!-- <span class="material-icons">circle</span> -->
+                                                <span class="vh-line">|</span>
+                                                <span class="status">Online Store</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-50 text-end my-auto btn-container">
+                                            <button mat-flat-button class="btn-dark">Get This</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-img-container">
+                        <div class="col-box">
+                            <div class="card shadow">
+                                <div class="card-img-container"
+                                    style="background-image: url(https://d3nn873nee648n.cloudfront.net/900x600/13375/14-SM471903.jpg);">
+                                    <div class="offer-tag">
+                                        <h6>Get <img src="../../../assets/svg/coin.svg" alt=""> 100</h6>
+                                    </div>
+                                    <div class="tag b_gradient">
+                                        <span class="material-icons">person_outline</span>
+                                        <p>Alex John</p>
+                                    </div>
+                                </div>
+                                <div class="card-inner">
+                                    <div class="row d-flex">
+                                        <div class="col-50">
+                                            <b class="product-title">
+                                                Grocery Products
+                                            </b>
+                                            <div class="d-flex">
+                                                <p class="text-muted">Garments</p>
+                                                <!-- <span class="material-icons">circle</span> -->
+                                                <span class="vh-line">|</span>
+                                                <span class="status">Online Store</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-50 text-end my-auto btn-container">
+                                            <button mat-flat-button class="btn-dark">Get This</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-img-container">
+                        <div class="col-box">
+                            <div class="card shadow">
+                                <div class="card-img-container"
+                                    style="background-image: url(https://d3nn873nee648n.cloudfront.net/900x600/13375/14-SM471903.jpg);">
+                                    <div class="offer-tag">
+                                        <h6>Get <img src="../../../assets/svg/coin.svg" alt=""> 100</h6>
+                                    </div>
+                                    <div class="tag b_gradient">
+                                        <span class="material-icons">person_outline</span>
+                                        <p>Alex John</p>
+                                    </div>
+                                </div>
+                                <div class="card-inner">
+                                    <div class="row d-flex">
+                                        <div class="col-50">
+                                            <b class="product-title">
+                                                Grocery Products
+                                            </b>
+                                            <div class="d-flex">
+                                                <p class="text-muted">Garments</p>
+                                                <!-- <span class="material-icons">circle</span> -->
+                                                <span class="vh-line">|</span>
+                                                <span class="status">Online Store</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-50 text-end my-auto btn-container">
+                                            <button mat-flat-button class="btn-dark">Get This</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-img-container">
+                        <div class="col-box">
+                            <div class="card shadow">
+                                <div class="card-img-container"
+                                    style="background-image: url(https://d3nn873nee648n.cloudfront.net/900x600/13375/14-SM471903.jpg);">
+                                    <div class="offer-tag">
+                                        <h6>Get <img src="../../../assets/svg/coin.svg" alt=""> 100</h6>
+                                    </div>
+                                    <div class="tag b_gradient">
+                                        <span class="material-icons">person_outline</span>
+                                        <p>Alex John</p>
+                                    </div>
+                                </div>
+                                <div class="card-inner">
+                                    <div class="row d-flex">
+                                        <div class="col-50">
+                                            <b class="product-title">
+                                                Grocery Products
+                                            </b>
+                                            <div class="d-flex">
+                                                <p class="text-muted">Garments</p>
+                                                <!-- <span class="material-icons">circle</span> -->
+                                                <span class="vh-line">|</span>
+                                                <span class="status">Online Store</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-50 text-end my-auto btn-container">
+                                            <button mat-flat-button class="btn-dark">Get This</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
